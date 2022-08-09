@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class homepage extends StatelessWidget {
-  const homepage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,11 +9,12 @@ class homepage extends StatelessWidget {
     String name = "Faiyaz";
 
     return Scaffold(
+      //complete body of ui or app
       appBar: AppBar(
         title: Text("catalogue app"),
       ),
-      body: Material(
-        child: Center(child: Text("this is $days days of flutter $name")),
+      body: Center(
+        child: Container(child: Text("this is $days days of flutter $name")),
       ),
       drawer: Drawer(),
     );
