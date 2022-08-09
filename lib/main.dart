@@ -1,3 +1,4 @@
+import 'package:catalogue_app/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,9 +22,7 @@ class MyApp extends StatelessWidget {
     final d = c; //it is runtime constant
 
     return MaterialApp(
-      home: Material(
-        child: Center(child: Text("this is $days days of flutter $name")),
-      ),
+      home: homepage(),
     );
   }
 }
