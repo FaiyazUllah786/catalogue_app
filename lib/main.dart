@@ -37,9 +37,9 @@ class MyApp extends StatelessWidget {
       // home: homepage(),//use either "/" or home
       themeMode: ThemeMode.light,
       theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          fontFamily: GoogleFonts.lato()
-              .fontFamily), //for light theme(user assign theme)
+        primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ), //for light theme(user assign theme)
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         // primarySwatch: Colors.deepOrange), //for dark theme(user assign theme)
