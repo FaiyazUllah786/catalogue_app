@@ -1,6 +1,7 @@
 import 'package:catalogue_app/pages/homepage.dart';
 import 'package:catalogue_app/pages/loginpage.dart';
 import 'package:catalogue_app/utils/routes.dart';
+import 'package:catalogue_app/widgets/themes.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -35,17 +36,12 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       // home: homepage(),//use either "/" or home
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ), //for light theme(user assign theme)
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        // primarySwatch: Colors.deepOrange), //for dark theme(user assign theme)
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       routes: {
-        "/": (context) => LoginPage(), //it is default route or home(use -> "/")
+        "/": (context) => HomePage(), //it is default route or home(use -> "/")
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage()
       }, //routes provides ways of acces different pages

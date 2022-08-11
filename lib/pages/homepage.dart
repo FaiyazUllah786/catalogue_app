@@ -1,4 +1,5 @@
 import 'package:catalogue_app/utils/routes.dart';
+import 'package:catalogue_app/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,17 +11,17 @@ class HomePage extends StatelessWidget {
     String name = "Faiyaz";
 
     return Scaffold(
-      //complete body of ui or app
-      appBar: AppBar(
-        title: Text("catalogue app"),
-      ),
-      body: Center(
-        child: Container(
-          child: Text("this is $days days of flutter $name"),
+        //complete body of ui or app
+        appBar: AppBar(
+          title: Text(
+            "catalogue app",
+          ),
         ),
-      ),
-
-      drawer: Drawer(),
-    );
+        body: Center(
+          child: Container(
+            child: Text("this is $days days of flutter $name"),
+          ),
+        ),
+        drawer: MyDrawer());
   }
 }
