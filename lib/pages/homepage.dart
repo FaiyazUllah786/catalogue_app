@@ -1,3 +1,4 @@
+import 'package:catalogue_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,8 +15,11 @@ class HomePage extends StatelessWidget {
         title: Text("catalogue app"),
       ),
       body: Center(
-        child: Container(child: Text("this is $days days of flutter $name")),
+        child: Container(
+          child: Text("this is $days days of flutter $name"),
+        ),
       ),
+
       drawer: Drawer(),
     );
   }
