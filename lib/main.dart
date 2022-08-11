@@ -1,6 +1,7 @@
 import 'package:catalogue_app/pages/homepage.dart';
 import 'package:catalogue_app/pages/loginpage.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,8 +35,9 @@ class MyApp extends StatelessWidget {
       // home: homepage(),//use either "/" or home
       themeMode: ThemeMode.light,
       theme: ThemeData(
-          primarySwatch:
-              Colors.deepPurple), //for light theme(user assign theme)
+          primarySwatch: Colors.deepPurple,
+          fontFamily: GoogleFonts.lato()
+              .fontFamily), //for light theme(user assign theme)
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         // primarySwatch: Colors.deepOrange), //for dark theme(user assign theme)
