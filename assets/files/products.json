@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Redmi note 7",
+            "desc": "Xiaomi redmi note 7",
+            "price": 10000,
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 2,
+            "name": "Samsung tab 7",
+            "desc": "samsung galaxy tab 7",
+            "price": 10000,
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "Redmi note 8",
+            "desc": "Xiaomi redmi note 8",
+            "price": 15450,
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "Redmi note 10",
+            "desc": "Xiaomi redmi note 10",
+            "price": 14300,
+            "color": "",
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "Samsung note 22",
+            "desc": "samsung galaxy note 22",
+            "price": 34300,
+            "color": "",
+            "image": ""
+        }
+    ]
+}
